@@ -1,0 +1,291 @@
+.ChatWrapper {
+    display: flex;
+    flex-flow: column;
+    flex: auto;
+    justify-content: space-between;
+    border-left: 1px solid var(--vt-c-gray-line);
+}
+
+.ChatContentHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 49px;
+    border-bottom: 1px solid var(--vt-c-gray-line);
+    padding: 18px
+}
+
+.ChatContentHeader img {
+    width: 40px;
+    height: 40px
+}
+
+.ChatContentHeader span {
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.ChatContentHeader span:last-child {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--vt-c-black-soft);
+}
+
+.ChatContainer {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    height: 50vh;
+    padding: 24px;
+    overflow: auto;
+}
+
+.MessageWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    gap: 16px;
+}
+
+.MessageHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.MessageHeader span {
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--vt-c-black-soft)
+}
+
+.PreviousMessageHeader {
+    background-color: var(--vt-c-gray-line);
+}
+
+.MessageBubble {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: auto;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.MessageContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+}
+
+.Message {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.MessageReply {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    border-left: 1px solid var(--vt-c-gray);
+    padding-left: 8px;
+}
+
+.MessageText {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--vt-c-black-soft);
+}
+
+.MessageDetails {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.MessageDetails div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.MessageAvatar {
+    width: 40px;
+    height: 40px;
+}
+
+.MessageBubble div:last-child img {
+    width: 16px;
+    height: 16px;
+}
+
+.ChatInputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 16px 24px 24px;
+    border-top: 1px solid var(--vt-c-gray-line);
+}
+
+.ChatReplyWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.ChatReplyWrapper img {
+    width: 13px;
+    height: 10px;
+}
+
+.ChatReplyContainer {
+    display: flex;
+    flex-flow: row;
+    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--vt-c-gray-line);
+    padding-bottom: 10px;
+}
+
+.ChatReplyContainer span:last-child {
+    max-height: 50px;
+    overflow: auto;
+}
+
+.ChatAttach {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 6px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 32px;
+    background: var(--vt-c-white);
+    box-shadow: 3px 3px 8px var(--vt-c-divider-light-1);
+}
+
+.ChatAttachItem {
+    height: 32px;
+    display: flex;
+    flex-flow: row;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ChatAttachItem:hover {
+    background-color: var(--vt-c-blue-soft);
+    transition: .2s ease-in;
+}
+
+.ChatAttachItem img {
+    width: 16px;
+    height: 16px;
+}
+
+.ChatInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    margin-left: 24px;
+    padding-top: 8px;
+}
+
+.ChatInput textarea {
+    flex: auto;
+    border: none;
+    outline: none;
+    resize: none;
+    max-height: 100px;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--vt-c-black-soft)
+}
+
+.ChatInput img {
+    width: 16px;
+    height: 16px;
+}
+
+.ChatMessageButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: var(--vt-c-white);
+}
+
+.MapWrapper {
+    height: 50%;
+    width: 60%;
+    padding: 12px;
+    box-shadow: 3px 3px 8px var(--vt-c-divider-light-1);
+    border-radius: 6px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: var(--vt-c-white);
+}
+
+.UploadInput::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.PhotoUpload::before {
+    content: "Attach a photo";
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.PhotoUpload:hover {
+    background: var(--vt-c-blue-soft);
+    transition: .2s ease-in;
+}
+
+.FileUpload::before {
+    content: "Attach a file";
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.FileUpload:hover {
+    background: var(--vt-c-blue-soft);
+    transition: .2s ease-in;
+}

@@ -1,0 +1,137 @@
+.ChatLeftPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.ChatLeftPanelHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 49px;
+    border-bottom: 1px solid var(--vt-c-gray-line);
+    padding: 18px
+}
+
+.ChatLeftPanelHeader img {
+    width: 12px;
+    height: 12px
+}
+
+.ChatLeftPanelHeader input {
+    flex: auto;
+    border: none;
+    outline: none;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--vt-c-black)
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 75vh;
+    overflow: scroll;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    height: 57px;
+    padding: 12px 0 12px 16px;
+}
+
+ul li:last-child {
+    border: none;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+ul li:hover {
+    background-color: var(--vt-c-blue-soft);
+    transition: .2s ease-in;
+}
+
+.ActiveItem {
+    background-color: var(--vt-c-blue-soft);
+    transition: .2s ease-in;
+}
+
+.ItemContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+    padding: 8px 16px 8px 0;
+    border-bottom: 1px solid var(--vt-c-gray-line);
+}
+
+.ItemContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.UserNameText {
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+}
+
+.TimeText {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--vt-c-gray);
+}
+
+.LastMessageText {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--vt-c-black-soft);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 212px;
+}
+
+.UnreadMessages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: var(--vt-c-main-blue);
+    font-family: Montserrat-Medium;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: var(--vt-c-white);
+}
+
+@media screen and (min-height: 1080px) {
+    ul {
+        height: 84vh;
+    }
+}
+@media screen and (min-height: 2160px) {
+    ul {
+        height: 92vh;
+    }
+}

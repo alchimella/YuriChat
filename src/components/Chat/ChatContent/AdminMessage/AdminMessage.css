@@ -1,0 +1,82 @@
+.AdminMessageDateTime {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--vt-c-black-soft);
+}
+
+.AdminMessageDateTime span {
+    width: 100px;
+}
+
+.AdminMessageDateTimeContent {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.AdminMessageDateTimeContent span {
+    width: 100px;
+}
+
+.AdminMessageDescription {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat-Regular;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--vt-c-black-soft);
+}
+
+.AdminMessageDescription span:last-child {
+    font-family: Montserrat-Medium;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--vt-c-black-soft);
+}
+
+.ButtonWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 16px;
+}
+
+.Button {
+    background-color: var(--vt-c-main-blue);
+    font-family: Montserrat-Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    color: var(--vt-c-white);
+    border: none;
+    border-radius: 2px;
+    padding: 12px 48px 12px 48px;
+}
+
+.Button:hover {
+    background-color: var(--vt-c-main-blue-hover);
+    transition: .15s ease-in;
+}
+
+.DisabledButton {
+    background-color: var(--vt-c-gray);
+    font-family: Montserrat-Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    color: var(--vt-c-white);
+    border: none;
+    border-radius: 2px;
+    padding: 12px 48px 12px 48px;
+}
